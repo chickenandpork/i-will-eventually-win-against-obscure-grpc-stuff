@@ -14,7 +14,7 @@ bazel_dep(name = "rules_proto_grpc", version = "5.8.0")
 bazel_dep(name = "rules_proto_grpc_go", version = "5.8.0")
 
 bazel_dep(name = "buildifier_prebuilt", version = "8.2.0.2", dev_dependency = True)
-bazel_dep(name = "rules_bazel_integration_test", version = "0.33.2", dev_dependency = True)
+bazel_dep(name = "rules_bazel_integration_test", version = "0.34.0", dev_dependency = True)
 
 go_deps = use_extension("@gazelle//:extensions.bzl", "go_deps")
 go_deps.from_file(go_mod = "//:go.mod")
